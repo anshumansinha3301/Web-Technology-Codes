@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Registration Form with Validation</title></head>
+<body style="font-family:sans-serif;background:#f0f0f0;display:flex;justify-content:center;align-items:center;height:100vh;">
+<form style="background:#fff;padding:20px;border-radius:8px;box-shadow:0 0 10px #ccc;">
+  <h2 style="text-align:center;">Register</h2>
+  
+  <input type="text" name="name" placeholder="Full Name" required minlength="3" style="width:100%;padding:8px;margin:5px 0;"><br>
+  
+  <input type="email" name="email" placeholder="Email" required style="width:100%;padding:8px;margin:5px 0;"><br>
+  
+  <input type="tel" name="phone" placeholder="Phone (10 digits)" pattern="[0-9]{10}" required title="Enter 10 digit phone number" style="width:100%;padding:8px;margin:5px 0;"><br>
+  
+  <input type="password" name="password" placeholder="Password (min 6 chars)" required minlength="6" style="width:100%;padding:8px;margin:5px 0;"><br>
+  
+  <button type="submit" style="width:100%;padding:10px;background:#4CAF50;color:white;border:none;border-radius:4px;">Submit</button>
+</form>
+</body>
+</html>
