@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "students.dtd">
+<students>
+    <student>
+        <id>101</id>
+        <name>John Doe</name>
+        <age>20</age>
+        <department>Computer Science</department>
+    </student>
+    <student>
+        <id>102</id>
+        <name>Jane Smith</name>
+        <age>22</age>
+        <department>Mathematics</department>
+    </student>
+</students>
+
+
+
+<!ELEMENT students (student+)>
+<!ELEMENT student (id, name, age, department)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT department (#PCDATA)>
